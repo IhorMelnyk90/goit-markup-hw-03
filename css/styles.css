@@ -17,7 +17,6 @@ ul {
   list-style: none;
 }
 button {
-  font-family: 'Roboto', sans-serif;
   cursor: pointer;
   border: none;
   border-radius: 4px;
@@ -30,6 +29,9 @@ link {
 }
 
 /*logo*/
+
+.header {
+}
 
 .logo {
   font-family: Raleway;
@@ -48,25 +50,44 @@ link {
 }
 
 /*nav*/
-.navigation-current {
-  color: var(--fist-text-color);
+
+.menu-nav {
+  display: flex;
+}
+
+.menu-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--second-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-.navigation {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--second-text-color);
+.current {
+  color: var(--fist-text-color);
 }
 
 .navigation:hover,
 .navigation:focus {
   color: var(--fist-text-color);
+}
+
+/* adress-nav */
+
+.adress-nav {
+  display: flex;
+}
+
+.adress-nav .item + .item {
+  margin-left: 50px;
 }
 
 /*hero*/
@@ -94,6 +115,10 @@ h1 {
   line-height: 1.8;
   letter-spacing: 0.06em;
   color: var(--third-text-color);
+}
+
+.button {
+  font-family: inherit;
 }
 
 /*section1*/
@@ -189,22 +214,33 @@ h1 {
   letter-spacing: 0.03em;
   color: var(--general-text-color);
 }
+.adress {
+  color: var(--general-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.adress:hover,
+.adress:focus {
+  color: var(--fist-text-color);
+}
 
-.adress1 {
+.adress2 {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--third-text-color);
 }
-.adress2 {
+.adress3 {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71px;
   letter-spacing: 0.03em;
-  color: var(--general-text-color);
+  color: var(--footer-nav-text-color);
 }
-.adress2:hover,
-.adress2:focus {
+.adress3:hover,
+.adress3:focus {
   color: var(--fist-text-color);
 }

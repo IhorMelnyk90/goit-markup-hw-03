@@ -10,12 +10,16 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Portfolio</title>
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <nav>
         <a class="logo" href="./index.html">
           Web<span class="logo_part2">Studio</span></a
@@ -25,7 +29,7 @@
             <a class="navigation" href="./index.html">Студия</a>
           </li>
           <li>
-            <a class="navigation-current" href="./portfolio.html">Портфолио</a>
+            <a class="navigation current" href="./portfolio.html">Портфолио</a>
           </li>
           <li>
             <a class="navigation" href="#">Контакты</a>
@@ -34,12 +38,12 @@
       </nav>
       <ul>
         <li>
-          <a class="adress2" href="mailto:info@devstudio.com"
+          <a class="adress" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
         <li>
-          <a class="adress2" href="tel:+380961111111">+38 096 111 11 11</a>
+          <a class="adress" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
     </header>
@@ -49,11 +53,21 @@
       <section>
         <h2>Наши работы</h2>
         <ul>
-          <li><button class="active-button" type="button">Все</button></li>
-          <li><button class="order2" type="button">Веб-сайты</button></li>
-          <li><button class="order2" type="button">Приложения</button></li>
-          <li><button class="order2" type="button">Дизайн</button></li>
-          <li><button class="order2" type="button">Маркетинг</button></li>
+          <li>
+            <button class="order2 active-button button" type="button">
+              Все
+            </button>
+          </li>
+          <li>
+            <button class="order2 button" type="button">Веб-сайты</button>
+          </li>
+          <li>
+            <button class="order2 button" type="button">Приложения</button>
+          </li>
+          <li><button class="order2 button" type="button">Дизайн</button></li>
+          <li>
+            <button class="order2 button" type="button">Маркетинг</button>
+          </li>
         </ul>
       </section>
 
@@ -125,15 +139,15 @@
         Web<span class="logo_part2_1">Studio</span></a
       >
       <div>
-        <p class="adress1">г. Киев, пр-т Леси Украинки, 26</p>
+        <p class="adress2">г. Киев, пр-т Леси Украинки, 26</p>
         <ul>
           <li>
-            <a class="adress2" href="mailto:info@example.com"
+            <a class="adress3" href="mailto:info@example.com"
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="adress2" href="tel:+380991111111">+38 099 111 11 11</a>
+            <a class="adress3" href="tel:+380991111111">+38 099 111 11 11</a>
           </li>
         </ul>
       </div>
