@@ -27,19 +27,28 @@ a {
 link {
   text-decoration: none;
 }
+/*Шапка*/
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
 
 /*logo*/
 
-.header {
-}
-
 .logo {
+  display: flex;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-left: 215px;
+
+  color: var(--fist-text-color);
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--fist-text-color);
 }
 
 .logo_part2 {
@@ -51,16 +60,25 @@ link {
 
 /*nav*/
 
-.menu-nav {
+.site-nav {
   display: flex;
+  margin: auto;
 }
 
-.menu-nav .item:not(:last-child) {
+.menu {
+  margin-left: 93px;
+}
+
+/* .site-nav .item:not(:last-child) {
   margin-right: 50px;
+} */
+
+.site-nav .item + .item {
+  margin-left: 50px;
 }
 
 .navigation {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -71,7 +89,7 @@ link {
   letter-spacing: 0.02em;
 }
 
-.current {
+.site-nav .current {
   color: var(--fist-text-color);
 }
 
@@ -80,14 +98,20 @@ link {
   color: var(--fist-text-color);
 }
 
-/* adress-nav */
-
-.adress-nav {
+.adress {
   display: flex;
-}
+  padding-top: 32px;
+  padding-bottom: 32px;
 
-.adress-nav .item + .item {
-  margin-left: 50px;
+  color: var(--general-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.adress:hover,
+.adress:focus {
+  color: var(--fist-text-color);
 }
 
 /*hero*/
@@ -101,20 +125,20 @@ h1 {
   text-transform: uppercase;
 }
 .banner {
+  color: var(--third-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  color: var(--third-text-color);
 }
 
 .order {
   background-color: var(--fist-text-color);
+  color: var(--third-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.06em;
-  color: var(--third-text-color);
 }
 
 .button {
@@ -125,28 +149,31 @@ h1 {
 
 .skills {
   text-transform: uppercase;
+
+  color: var(--second-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  color: var(--second-text-color);
 }
 .skills-info {
+  color: var(--general-text-color);
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--general-text-color);
 }
 
 /*section_work*/
 
 .type-h2 {
+  color: var(--second-text-color);
+
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: var(--second-text-color);
 }
 
 /*section_team*/
@@ -156,18 +183,20 @@ h1 {
 }
 
 .team-memb-name {
+  color: var(--second-text-color);
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--second-text-color);
 }
 .team-position {
+  color: var(--general-text-color);
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--general-text-color);
 }
 
 /*footer*/
@@ -187,11 +216,11 @@ h1 {
 }
 
 .order2 {
+  color: var(--second-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
-  color: var(--second-text-color);
 }
 
 .order2:hover {
@@ -200,45 +229,36 @@ h1 {
 }
 
 .project-title {
+  color: var(--second-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--second-text-color);
 }
 
 .project-text {
+  color: var(--general-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: var(--general-text-color);
-}
-.adress {
-  color: var(--general-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-.adress:hover,
-.adress:focus {
-  color: var(--fist-text-color);
 }
 
 .adress2 {
+  color: var(--third-text-color);
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--third-text-color);
 }
 .adress3 {
+  color: var(--footer-nav-text-color);
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71px;
   letter-spacing: 0.03em;
-  color: var(--footer-nav-text-color);
 }
 .adress3:hover,
 .adress3:focus {
