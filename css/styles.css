@@ -13,7 +13,7 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--third-text-color);
 }
-ul {
+h1 h2 h3 h4 h5 h6 p ul {
   list-style: none;
 }
 button {
@@ -27,6 +27,7 @@ a {
 link {
   text-decoration: none;
 }
+
 /*Шапка*/
 
 .main-nav {
@@ -68,11 +69,6 @@ link {
 .menu {
   margin-left: 93px;
 }
-
-/* .site-nav .item:not(:last-child) {
-  margin-right: 50px;
-} */
-
 .site-nav .item + .item {
   margin-left: 50px;
 }
@@ -117,14 +113,21 @@ link {
 /*hero*/
 
 .hero {
+  display: block;
+  box-sizing: border-box;
+  height: 600px;
+  width: auto;
   background-color: var(--first-background-color);
 }
 
-/*banner*/
-h1 {
-  text-transform: uppercase;
-}
 .banner {
+  padding-top: 200px;
+  margin-left: 452px;
+  width: 696px;
+  height: 120px;
+
+  text-align: center;
+  text-transform: uppercase;
   color: var(--third-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -133,15 +136,18 @@ h1 {
 }
 
 .order {
+  width: 200px;
+  height: 50px;
+
+  margin-left: 700px;
+  align-items: center;
+
   background-color: var(--fist-text-color);
   color: var(--third-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.06em;
-}
-
-.button {
   font-family: inherit;
 }
 
