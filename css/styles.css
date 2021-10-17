@@ -113,18 +113,15 @@ link {
 /*hero*/
 
 .hero {
-  display: block;
-  box-sizing: border-box;
-  height: 600px;
-  width: auto;
+  padding: 200px 0;
+  text-align: center;
   background-color: var(--first-background-color);
 }
 
 .banner {
-  padding-top: 200px;
-  margin-left: 452px;
   width: 696px;
-  height: 120px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 
   text-align: center;
   text-transform: uppercase;
@@ -136,12 +133,10 @@ link {
 }
 
 .order {
-  width: 200px;
-  height: 50px;
-
-  margin-left: 700px;
-  align-items: center;
-
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
   background-color: var(--fist-text-color);
   color: var(--third-text-color);
   font-weight: 400;
