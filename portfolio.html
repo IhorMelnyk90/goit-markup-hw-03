@@ -10,140 +10,114 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Portfolio</title>
   </head>
 
   <body>
-    <!--Шапка сайта-->
-    <header class="header">
-      <nav class="container main-nav">
+    <header>
+      <nav>
         <a class="logo" href="./index.html">
           Web<span class="logo_part2">Studio</span></a
         >
-        <ul class="site-nav menu">
-          <li class="item">
+        <ul>
+          <li>
             <a class="navigation" href="./index.html">Студия</a>
           </li>
-          <li class="item">
-            <a class="navigation current" href="./portfolio.html">Портфолио</a>
+          <li>
+            <a class="navigation-current" href="./portfolio.html">Портфолио</a>
           </li>
-          <li class="item">
+          <li>
             <a class="navigation" href="#">Контакты</a>
           </li>
         </ul>
-        <ul class="site-nav auth">
-          <li class="item">
-            <a class="adress" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="item">
-            <a class="adress" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
       </nav>
+      <ul>
+        <li>
+          <a class="adress2" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a class="adress2" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+      </ul>
     </header>
 
     <main>
       <!--Filter_panel-->
       <section>
-        <ul class="filter">
-          <li class="item">
-            <button class="order2 active-button button" type="button">
-              Все
-            </button>
-          </li>
-          <li class="item">
-            <button class="order2 button" type="button">Веб-сайты</button>
-          </li>
-          <li class="item">
-            <button class="order2 button" type="button">Приложения</button>
-          </li>
-          <li class="item">
-            <button class="order2 button" type="button">Дизайн</button>
-          </li>
-          <li class="item">
-            <button class="order2 button" type="button">Маркетинг</button>
-          </li>
+        <h2>Наши работы</h2>
+        <ul>
+          <li><button class="active-button" type="button">Все</button></li>
+          <li><button class="order2" type="button">Веб-сайты</button></li>
+          <li><button class="order2" type="button">Приложения</button></li>
+          <li><button class="order2" type="button">Дизайн</button></li>
+          <li><button class="order2" type="button">Маркетинг</button></li>
         </ul>
       </section>
 
       <!--portfolio-->
-      <section class="test-container">
-        <div>
-          <ul class="flex-container">
-            <li class="flex-element">
-              <img src="./images/prj1.jpg" alt="Технокряк" />
-              <h2 class="project-title">Технокряк</h2>
-              <p class="project-text">Веб-сайт</p>
-            </li>
-
-            <li class="flex-element">
-              <img
-                src="./images/prj2.jpg"
-                width="370"
-                alt="New Orlean vs Golden Star"
-              />
-              <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
-              <p class="project-text">Дизайн</p>
-            </li>
-
-            <li class="flex-element">
-              <img src="./images/prj3.jpg" width="370" alt="Ресторан Seafood" />
-              <h2 class="project-title">Ресторан Seafood</h2>
-              <p class="project-text">Приложение</p>
-            </li>
-
-            <li class="flex-element">
-              <img src="./images/prj4.jpg" width="370" alt="Проект Prime" />
-              <h2 class="project-title">Проект Prime</h2>
-              <p class="project-text">Маркетинг</p>
-            </li>
-
-            <li class="flex-element">
-              <img src="./images/prj5.jpg" width="370" alt="Проект Boxes" />
-              <h2 class="project-title">Проект Boxes</h2>
-              <p class="project-text">Приложение</p>
-            </li>
-
-            <li class="flex-element">
-              <img
-                src="./images/prj6.jpg"
-                width="370"
-                alt="Inspiration has no Borders"
-              />
-              <h2 class="project-title">Inspiration has no Borders</h2>
-              <p class="project-text">Веб-сайт</p>
-            </li>
-
-            <li class="flex-element">
-              <img
-                src="./images/prj7.jpg"
-                width="370"
-                alt="Издание Limited Edition"
-              />
-              <h2 class="project-title">Издание Limited Edition</h2>
-              <p class="project-text">Дизайн</p>
-            </li>
-
-            <li class="flex-element">
-              <img src="./images/prj8.jpg" width="370" alt="Проект LAB" />
-              <h2 class="project-title">Проект LAB</h2>
-              <p class="project-text">Маркетинг</p>
-            </li>
-
-            <li class="flex-element">
-              <img src="./images/prj9.jpg" width="370" alt="Growing Business" />
-              <h2 class="project-title">Growing Business</h2>
-              <p class="project-text">Приложение</p>
-            </li>
-          </ul>
-        </div>
+      <section>
+        <ul>
+          <li>
+            <img src="./images/prj1.jpg" alt="Технокряк" />
+            <h2 class="project-title">Технокряк</h2>
+            <p class="project-text">Веб-сайт</p>
+          </li>
+          <li>
+            <img
+              src="./images/prj2.jpg"
+              width="370"
+              alt="New Orlean vs Golden Star"
+            />
+            <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
+            <p class="project-text">Дизайн</p>
+          </li>
+          <li>
+            <img src="./images/prj3.jpg" width="370" alt="Ресторан Seafood" />
+            <h2 class="project-title">Ресторан Seafood</h2>
+            <p class="project-text">Приложение</p>
+          </li>
+          <li>
+            <img src="./images/prj4.jpg" width="370" alt="Проект Prime" />
+            <h2 class="project-title">Проект Prime</h2>
+            <p class="project-text">Маркетинг</p>
+          </li>
+          <li>
+            <img src="./images/prj5.jpg" width="370" alt="Проект Boxes" />
+            <h2 class="project-title">Проект Boxes</h2>
+            <p class="project-text">Приложение</p>
+          </li>
+          <li>
+            <img
+              src="./images/prj6.jpg"
+              width="370"
+              alt="Inspiration has no Borders"
+            />
+            <h2 class="project-title">Inspiration has no Borders</h2>
+            <p class="project-text">Веб-сайт</p>
+          </li>
+          <li>
+            <img
+              src="./images/prj7.jpg"
+              width="370"
+              alt="Издание Limited Edition"
+            />
+            <h2 class="project-title">Издание Limited Edition</h2>
+            <p class="project-text">Дизайн</p>
+          </li>
+          <li>
+            <img src="./images/prj8.jpg" width="370" alt="Проект LAB" />
+            <h2 class="project-title">Проект LAB</h2>
+            <p class="project-text">Маркетинг</p>
+          </li>
+          <li>
+            <img src="./images/prj9.jpg" width="370" alt="Growing Business" />
+            <h2 class="project-title">Growing Business</h2>
+            <p class="project-text">Приложение</p>
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="footer">
@@ -151,15 +125,15 @@
         Web<span class="logo_part2_1">Studio</span></a
       >
       <div>
-        <p class="adress2">г. Киев, пр-т Леси Украинки, 26</p>
+        <p class="adress1">г. Киев, пр-т Леси Украинки, 26</p>
         <ul>
           <li>
-            <a class="adress3" href="mailto:info@example.com"
+            <a class="adress2" href="mailto:info@example.com"
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="adress3" href="tel:+380991111111">+38 099 111 11 11</a>
+            <a class="adress2" href="tel:+380991111111">+38 099 111 11 11</a>
           </li>
         </ul>
       </div>
