@@ -343,7 +343,26 @@ img {
   color: var(--general-text-color);
 }
 
-/* portfolio */
+/* Портфолио фильтр*/
+
+.container-portfolio {
+  margin-bottom: 94px;
+}
+
+.our-filters {
+  padding-top: 94px;
+  padding-bottom: 34px;
+}
+
+.filter {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+.filter .item + .item {
+  margin-left: 8px;
+}
+
 .active-button {
   background-color: var(--fist-text-color);
   color: var(--third-text-color);
@@ -366,20 +385,46 @@ img {
   background-color: var(--fist-text-color);
 }
 
+/*Портфолио*/
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+
+.portfolio-item {
+  width: 370px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+
+  background-color: var(--third-text-color);
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+/*елементи списка портфолио*/
+
 .project-title {
+  color: var(--second-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--second-text-color);
+  padding-top: 20px;
+  padding-bottom: 4px;
+  padding-left: 24px;
 }
 
 .project-text {
+  color: var(--general-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: var(--general-text-color);
+  padding-bottom: 20px;
+  padding-left: 24px;
 }
 
 /*Футер*/
