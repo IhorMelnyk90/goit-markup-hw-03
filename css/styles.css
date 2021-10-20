@@ -85,8 +85,8 @@ img {
 
 .header {
   background-color: var(--third-text-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
+  border-bottom: 1px solid;
+  color: #ececec;
 }
 
 .header-container {
@@ -96,6 +96,8 @@ img {
 
 .menu-list {
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .menu-item:not(:last-child) {
@@ -127,6 +129,8 @@ img {
   display: flex;
   margin-left: auto;
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .menu-list .current {
@@ -219,7 +223,7 @@ img {
   padding-left: 32px;
   background-color: var(--fist-text-color);
   color: var(--third-text-color);
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.06em;
@@ -228,13 +232,9 @@ img {
 
 /*Особенности*/
 
-.skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 94px;
-  margin-right: auto;
-  margin-bottom: 94px;
-  margin-left: auto;
+.skills-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .skills-list {
@@ -269,6 +269,10 @@ img {
 
 /*Наша работа*/
 
+.work-section {
+  padding-bottom: 94px;
+}
+
 .work-header {
   color: var(--second-text-color);
   margin-bottom: 50px;
@@ -296,12 +300,9 @@ img {
 
 .team-container {
   background-color: var(--team-background-color);
-  margin-top: 94px;
-  padding-bottom: 94px;
 }
 
 .team-header {
-  padding-top: 94px;
   margin-bottom: 50px;
   text-align: center;
   font-weight: 700;
@@ -317,6 +318,7 @@ img {
 .team-item {
   flex-basis: calc(100% / 4 - 30px);
   margin-right: 30px;
+  background-color: var(--third-text-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -345,25 +347,19 @@ img {
 
 /* Портфолио фильтр*/
 
-.container-portfolio {
-  margin-bottom: 94px;
-}
-
-.our-filters {
-  padding-top: 94px;
-  padding-bottom: 34px;
-}
-
 .filter {
   display: flex;
   margin: auto;
   justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 .filter .item + .item {
   margin-left: 8px;
 }
 
 .active-button {
+  padding: 6px 22px;
   background-color: var(--fist-text-color);
   color: var(--third-text-color);
   font-weight: 500;
@@ -373,6 +369,7 @@ img {
 }
 
 .order2 {
+  padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -406,15 +403,19 @@ img {
 
 /*елементи списка портфолио*/
 
+.port-text-group {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  text-align: left;
+}
+
 .project-title {
   color: var(--second-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding-top: 20px;
-  padding-bottom: 4px;
-  padding-left: 24px;
 }
 
 .project-text {
@@ -423,24 +424,22 @@ img {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  padding-bottom: 20px;
-  padding-left: 24px;
 }
 
 /*Футер*/
 
 .footer {
-  padding-top: 83px;
-  padding-bottom: 37px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--first-background-color);
 }
 
-.footer-logo-container {
+.logo-padding {
   margin-bottom: 20px;
 }
 
 .footer-logo {
-  margin-right: 93px;
+  padding-bottom: 20px;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
